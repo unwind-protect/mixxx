@@ -1,0 +1,3915 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset mixxxVersion="2.0.0+" schemaVersion="1">
+    <info>
+        <name>Reloop Jockey 3 Remix</name>
+        <author>Neil Hubbard</author>
+        <description>Work in progress v0.3...</description>
+        <forums>https://mixxx.discourse.group/t/reloop-jockey-3-remix-mapping/22437</forums>
+        <wiki>https://www.mixxx.org/wiki/doku.php/reloop_jockey_3_remix</wiki>
+    </info>
+    <controller id="Reloop">
+        <scriptfiles>
+            <file functionprefix="Jockey3RM" filename="Reloop-Jockey-3-Remix-scripts-v03.js"/>
+        </scriptfiles>
+        <controls>
+          <!-- MIXER  -->
+          
+          <!-- MIXER : DECK SWITCHES -->
+          <!-- Todo: IN1/ IN2 support-->
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.deckSwitch</key>
+            <status>0x90</status>
+            <midino>0x3C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.deckSwitch</key>
+            <status>0x90</status>
+            <midino>0x3F</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- MIXER : TRAX -->
+          <!-- MIXER : TRAX : ENCODER -->
+
+          <control>
+            <group>[Master]</group>
+            <key>Jockey3RM.traxEncoderPress</key>
+            <description>TraxPush to Browse</description>
+            <status>0x90</status>
+            <midino>0x35</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Playlist]</group>
+            <key>ToggleSelectedSidebarItem</key>
+            <status>0x90</status>
+            <midino>0x74</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Playlist]</group>
+            <key>Jockey3RM.traxEncoderTurn</key>
+            <status>0xB0</status>
+            <midino>0x35</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Playlist]</group>
+            <key>Jockey3RM.shiftTraxEncoderTurn</key>
+            <status>0xB0</status>
+            <midino>0x74</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- MIXER : TRAX : LOAD  -->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>LoadSelectedTrack</key>
+            <status>0x90</status>
+            <midino>0x1B</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>LoadSelectedTrack</key>
+            <status>0x91</status>
+            <midino>0x1B</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>LoadSelectedTrack</key>
+            <status>0x92</status>
+            <midino>0x1B</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>LoadSelectedTrack</key>
+            <status>0x93</status>
+            <midino>0x1B</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- ** MIXER : EQUALIZERS ** -->
+
+          <!-- **** MIXER : EQUALIZERS : DECK A *** -->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.channelGain</key>
+            <description>Pregain</description>
+            <status>0xB0</status>
+            <midino>0x79</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+            <key>Jockey3RM.channelHiEq</key>
+            <description>High EQ</description>
+            <status>0xB0</status>
+            <midino>0x7A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+            <key>Jockey3RM.channelHiEq_kill</key>
+            <description>High EQ kill</description>
+            <status>0x90</status>
+            <midino>0x7A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+            <key>Jockey3RM.channelMidEq</key>
+            <description>Mid EQ</description>
+            <status>0xB0</status>
+            <midino>0x7B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+            <key>Jockey3RM.channelMidEq_kill</key>
+            <description>Mid EQ kill</description>
+            <status>0x90</status>
+            <midino>0x7B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <control>
+            <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+            <key>Jockey3RM.channelLowEq</key>
+            <description>Low EQ</description>
+            <status>0xB0</status>
+            <midino>0x7C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+            <key>Jockey3RM.channelLowEq_kill</key>
+            <description>Low EQ</description>
+            <status>0x90</status>
+            <midino>0x7C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[QuickEffectRack1_[Channel1]]</group>
+            <key>super1</key>
+            <status>0xB0</status>
+            <midino>0x32</midino>
+            <options>
+              <soft-takeover/>
+            </options>
+          </control>
+
+          <control>
+            <group>[QuickEffectRack1_[Channel1]_Effect1]</group>
+            <key>enabled</key>
+            <status>0x90</status>
+            <midino>0x32</midino>
+            <options>
+              <soft-takeover/>
+            </options>
+          </control>
+
+          <!-- **** MIXER : EQUALIZERS : DECK B *** -->
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.channelGain</key>
+            <description>Pregain</description>
+            <status>0xB1</status>
+            <midino>0x79</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+            <key>Jockey3RM.channelHiEq</key>
+            <description>High EQ</description>
+            <status>0xB1</status>
+            <midino>0x7A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+            <key>Jockey3RM.channelHiEq_kill</key>
+            <description>High EQ kill</description>
+            <status>0x91</status>
+            <midino>0x7A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+            <key>Jockey3RM.channelMidEq</key>
+            <description>Mid EQ</description>
+            <status>0xB1</status>
+            <midino>0x7B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+            <key>Jockey3RM.channelMidEq_kill</key>
+            <description>Mid EQ kill</description>
+            <status>0x91</status>
+            <midino>0x7B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <control>
+            <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+            <key>Jockey3RM.channelLowEq</key>
+            <description>Low EQ</description>
+            <status>0xB1</status>
+            <midino>0x7C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+            <key>Jockey3RM.channelLowEq_kill</key>
+            <description>Low EQ</description>
+            <status>0x91</status>
+            <midino>0x7C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[QuickEffectRack1_[Channel2]]</group>
+            <key>super1</key>
+            <status>0xB1</status>
+            <midino>0x32</midino>
+            <options>
+              <soft-takeover/>
+            </options>
+          </control>
+
+          <control>
+            <group>[QuickEffectRack1_[Channel2]_Effect1]</group>
+            <key>enabled</key>
+            <status>0x91</status>
+            <midino>0x32</midino>
+            <options>
+              <soft-takeover/>
+            </options>
+          </control>
+
+
+          <!-- **** MIXER : EQUALIZERS : DECK C *** -->
+
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.channelGain</key>
+            <description>Pregain</description>
+            <status>0xB2</status>
+            <midino>0x79</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+            <key>Jockey3RM.channelHiEq</key>
+            <description>High EQ</description>
+            <status>0xB2</status>
+            <midino>0x7A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+            <key>Jockey3RM.channelHiEq_kill</key>
+            <description>High EQ kill</description>
+            <status>0x92</status>
+            <midino>0x7A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+            <key>Jockey3RM.channelMidEq</key>
+            <description>Mid EQ</description>
+            <status>0xB2</status>
+            <midino>0x7B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+            <key>Jockey3RM.channelMidEq_kill</key>
+            <description>Mid EQ kill</description>
+            <status>0x92</status>
+            <midino>0x7B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <control>
+            <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+            <key>Jockey3RM.channelLowEq</key>
+            <description>Low EQ</description>
+            <status>0xB2</status>
+            <midino>0x7C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel3]_Effect1]</group>
+            <key>Jockey3RM.channelLowEq_kill</key>
+            <description>Low EQ</description>
+            <status>0x92</status>
+            <midino>0x7C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[QuickEffectRack1_[Channel3]]</group>
+            <key>super1</key>
+            <status>0xB2</status>
+            <midino>0x32</midino>
+            <options>
+              <soft-takeover/>
+            </options>
+          </control>
+
+          <control>
+            <group>[QuickEffectRack1_[Channel3]_Effect1]</group>
+            <key>enabled</key>
+            <status>0x92</status>
+            <midino>0x32</midino>
+            <options>
+              <soft-takeover/>
+            </options>
+          </control>
+
+          <!-- **** MIXER : EQUALIZERS : DECK D *** -->
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.channelGain</key>
+            <description>Pregain</description>
+            <status>0xB3</status>
+            <midino>0x79</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+            <key>Jockey3RM.channelHiEq</key>
+            <description>High EQ</description>
+            <status>0xB3</status>
+            <midino>0x7A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+            <key>Jockey3RM.channelHiEq_kill</key>
+            <description>High EQ kill</description>
+            <status>0x93</status>
+            <midino>0x7A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+            <key>Jockey3RM.channelMidEq</key>
+            <description>Mid EQ</description>
+            <status>0xB3</status>
+            <midino>0x7B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+            <key>Jockey3RM.channelMidEq_kill</key>
+            <description>Mid EQ kill</description>
+            <status>0x93</status>
+            <midino>0x7B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+            <key>Jockey3RM.channelLowEq</key>
+            <description>Low EQ</description>
+            <status>0xB3</status>
+            <midino>0x7C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EqualizerRack1_[Channel4]_Effect1]</group>
+            <key>Jockey3RM.channelLowEq_kill</key>
+            <description>Low EQ</description>
+            <status>0x93</status>
+            <midino>0x7C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[QuickEffectRack1_[Channel4]]</group>
+            <key>super1</key>
+            <status>0xB3</status>
+            <midino>0x32</midino>
+            <options>
+              <soft-takeover/>
+            </options>
+          </control>
+
+          <control>
+            <group>[QuickEffectRack1_[Channel4]_Effect1]</group>
+            <key>enabled</key>
+            <status>0x93</status>
+            <midino>0x32</midino>
+            <options>
+              <soft-takeover/>
+            </options>
+          </control>
+
+          <!-- MIXER : PFL -->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>pfl</key>
+            <status>0x90</status>
+            <midino>0x1C</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>pfl</key>
+            <status>0x91</status>
+            <midino>0x1C</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>pfl</key>
+            <status>0x92</status>
+            <midino>0x1C</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>pfl</key>
+            <status>0x93</status>
+            <midino>0x1C</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+          
+          <!-- MIXER : CUE-MIX-->
+
+          <control>
+            <group>[Master]</group>
+            <key>headMix</key>
+            <status>0xB0</status>
+            <midino>0x36</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+          
+          <!-- ** MIXER : FADERS ** -->
+            <control>
+                <group>[Channel1]</group>
+                <key>Jockey3RM.faderVol</key>
+                <description>Volume Fader</description>
+                <status>0xB0</status>
+                <midino>0x31</midino>
+                <options>
+                  <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>Jockey3RM.faderVol</key>
+                <description>Volume Fader</description>
+                <status>0xB1</status>
+                <midino>0x31</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel3]</group>
+                <key>Jockey3RM.faderVol</key>
+                <description>Volume Fader</description>
+                <status>0xB2</status>
+                <midino>0x31</midino>
+                <options>
+                  <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel4]</group>
+                <key>Jockey3RM.faderVol</key>
+                <description>Volume Fader</description>
+                <status>0xB3</status>
+                <midino>0x31</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+
+          <!-- MIXER : FADERSTART TRIGGERS -->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.faderStart</key>
+            <description>Fader start</description>
+            <status>0x90</status>
+            <midino>0x27</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.faderStart</key>
+            <description>Fader start</description>
+            <status>0x91</status>
+            <midino>0x27</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.faderStart</key>
+            <description>Fader start</description>
+            <status>0x92</status>
+            <midino>0x27</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.faderStart</key>
+            <description>Fader start</description>
+            <status>0x93</status>
+            <midino>0x27</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- MIXER : CROSSFADER -->
+          
+            <control>
+                <group>[Master]</group>
+                <key>crossfader</key>
+                <status>0xB0</status>
+                <midino>0x37</midino>
+                <options>
+                  <soft-takeover/>
+                </options>
+            </control>
+
+          <control>
+            <group>[Master]</group>
+            <key>Jockey3RM.crossfaderCurve</key>
+            <status>0xB0</status>
+            <midino>0x38</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <!-- TRANSPORT CONTROLS -->
+       
+          <!-- TRANSPORT CONTROLS : DECK A -->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.playPressed</key>
+            <status>0x90</status>
+            <midino>0x1A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[Channel1]</group>
+            <key>cue_default</key>
+            <status>0x90</status>
+            <midino>0x19</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.cupPressed</key>
+            <description>Cue-and-play (CUP)</description>
+            <status>0x90</status>
+            <midino>0x18</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>sync_enabled</key>
+            <status>0x90</status>
+            <midino>0x17</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- TRANSPORT CONTROLS : DECK A : SHIFT-->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.keylockPressed</key>
+            <status>0x90</status>
+            <midino>0x57</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.quantizePressed</key>
+            <status>0x90</status>
+            <midino>0x58</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>  
+          
+          <!-- TRANSPORT CONTROLS : DECK B -->
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.playPressed</key>
+            <status>0x91</status>
+            <midino>0x1A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>cue_default</key>
+            <status>0x91</status>
+            <midino>0x19</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.cupPressed</key>
+            <description>Cue-and-play (CUP)</description>
+            <status>0x91</status>
+            <midino>0x18</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>sync_enabled</key>
+            <status>0x91</status>
+            <midino>0x17</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- TRANSPORT CONTROLS : DECK B : SHIFT-->
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.keylockPressed</key>
+            <status>0x91</status>
+            <midino>0x57</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.quantizePressed</key>
+            <status>0x91</status>
+            <midino>0x58</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <!-- TRANSPORT CONTROLS : DECK C -->
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.playPressed</key>
+            <status>0x92</status>
+            <midino>0x1A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>cue_default</key>
+            <status>0x92</status>
+            <midino>0x19</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.cupPressed</key>
+            <description>Cue-and-play (CUP)</description>
+            <status>0x92</status>
+            <midino>0x18</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>sync_enabled</key>
+            <status>0x92</status>
+            <midino>0x17</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- TRANSPORT CONTROLS : DECK C : SHIFT -->
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.keylockPressed</key>
+            <status>0x92</status>
+            <midino>0x57</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.quantizePressed</key>
+            <status>0x92</status>
+            <midino>0x58</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          
+          <!-- TRANSPORT CONTROLS : DECK D -->
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.playPressed</key>
+            <status>0x93</status>
+            <midino>0x1A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>cue_default</key>
+            <status>0x93</status>
+            <midino>0x19</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.cupPressed</key>
+            <description>Cue-and-play (CUP)</description>
+            <status>0x93</status>
+            <midino>0x18</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>sync_enabled</key>
+            <status>0x93</status>
+            <midino>0x17</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- TRANSPORT CONTROLS : DECK D : SHIFT -->
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.keylockPressed</key>
+            <status>0x93</status>
+            <midino>0x57</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.quantizePressed</key>
+            <status>0x93</status>
+            <midino>0x58</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!--
+          <!- TRANSPORT CONTROLS: PREVIEW DECK ->
+          <!- Deprecated, use Trax controller ->
+
+          <control>
+            <group>[PreviewDeck1]</group>
+            <key>LoadSelectedTrackAndPlay</key>
+            <description>Load And Play on Preview (Marked as '/MASTER' L) </description>
+            <status>0x90</status>
+            <midino>0x56</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[PreviewDeck1]</group>
+            <key>LoadSelectedTrackAndPlay</key>
+            <description>Load And Play on Preview (Marked as '/MASTER' L) </description>
+            <status>0x92</status>
+            <midino>0x56</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[PreviewDeck1]</group>
+            <key>stop</key>
+            <description>Stop Preview (Marked as '/MASTER' R) </description>
+            <status>0x91</status>
+            <midino>0x56</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+          -->
+          
+          <!-- JOGWHEEL -->
+          
+          <!-- JOGWHEEL : DECK A -->
+          
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.wheelTouch</key>
+            <status>0x90</status>
+            <midino>0x22</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <status>0xB0</status>
+            <midino>0x22</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <description>Pitch jog when no modifier used</description>
+            <status>0xB0</status>
+            <midino>0x28</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.wheelTouchShift</key>
+            <status>0x90</status>
+            <midino>0x61</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <status>0xB0</status>
+            <midino>0x61</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.wheelTouch</key>
+            <description>Track Search stop (when playing)</description>
+            <status>0x90</status>
+            <midino>0x26</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.trackSearch</key>
+            <status>0xB0</status>
+            <midino>0x26</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+
+          <!-- JOGWHEEL : DECK B -->
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.wheelTouch</key>
+            <status>0x91</status>
+            <midino>0x22</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <status>0xB1</status>
+            <midino>0x22</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <description>Pitch jog when no modifier used</description>
+            <status>0xB1</status>
+            <midino>0x28</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.wheelTouchShift</key>
+            <status>0x91</status>
+            <midino>0x61</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <status>0xB1</status>
+            <midino>0x61</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.wheelTouch</key>
+            <description>Track Search stop (when playing)</description>
+            <status>0x91</status>
+            <midino>0x26</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.trackSearch</key>
+            <status>0xB1</status>
+            <midino>0x26</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <!-- JOGWHEEL : DECK C -->
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.wheelTouch</key>
+            <status>0x92</status>
+            <midino>0x22</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <status>0xB2</status>
+            <midino>0x22</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <description>Pitch jog when no modifier used</description>
+            <status>0xB2</status>
+            <midino>0x28</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.wheelTouchShift</key>
+            <status>0x92</status>
+            <midino>0x61</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <status>0xB2</status>
+            <midino>0x61</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.wheelTouch</key>
+            <description>Track Search stop (when playing)</description>
+            <status>0x92</status>
+            <midino>0x26</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.trackSearch</key>
+            <status>0xB2</status>
+            <midino>0x26</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+
+          <!-- JOGWHEEL : DECK D -->
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.wheelTouch</key>
+            <status>0x93</status>
+            <midino>0x22</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <status>0xB3</status>
+            <midino>0x22</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <description>Pitch jog when no modifier used</description>
+            <status>0xB3</status>
+            <midino>0x28</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.wheelTouchShift</key>
+            <status>0x93</status>
+            <midino>0x61</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.wheelTurn</key>
+            <status>0xB3</status>
+            <midino>0x61</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.wheelTouch</key>
+            <description>Track Search stop (when playing)</description>
+            <status>0x93</status>
+            <midino>0x26</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.trackSearch</key>
+            <status>0xB3</status>
+            <midino>0x26</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          
+          <!-- HOTCUES -->
+
+          <!-- ** HOTCUES : DECK A ** -->
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.hotcue_activate</key>
+            <description>HotCue 1</description>
+            <status>0x90</status>
+            <midino>0x0B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.hotcue_clear</key>
+            <description>HotCue 1 Delete</description>
+            <status>0x90</status>
+            <midino>0x4A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.hotcue_activate</key>
+            <description>HotCue 2</description>
+            <status>0x90</status>
+            <midino>0x0C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.hotcue_clear</key>
+            <description>HotCue 2 Delete</description>
+            <status>0x90</status>
+            <midino>0x4B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.hotcue_activate</key>
+            <description>HotCue 3</description>
+            <status>0x90</status>
+            <midino>0x0D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.hotcue_clear</key>
+            <description>HotCue 3 Delete</description>
+            <status>0x90</status>
+            <midino>0x4C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.hotcue_activate</key>
+            <description>HotCue 4</description>
+            <status>0x90</status>
+            <midino>0x0E</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.hotcue_clear</key>
+            <description>HotCue 4 Delete</description>
+            <status>0x90</status>
+            <midino>0x4D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- ** HOTCUES : DECK B ** -->
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.hotcue_activate</key>
+            <description>HotCue 1</description>
+            <status>0x91</status>
+            <midino>0x0B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.hotcue_clear</key>
+            <description>HotCue 1 Delete</description>
+            <status>0x91</status>
+            <midino>0x4A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.hotcue_activate</key>
+            <description>HotCue 2</description>
+            <status>0x91</status>
+            <midino>0x0C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.hotcue_clear</key>
+            <description>HotCue 2 Delete</description>
+            <status>0x91</status>
+            <midino>0x4B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.hotcue_activate</key>
+            <description>HotCue 3</description>
+            <status>0x91</status>
+            <midino>0x0D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.hotcue_clear</key>
+            <description>HotCue 3 Delete</description>
+            <status>0x91</status>
+            <midino>0x4C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.hotcue_activate</key>
+            <description>HotCue 4</description>
+            <status>0x91</status>
+            <midino>0x0E</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.hotcue_clear</key>
+            <description>HotCue 4 Delete</description>
+            <status>0x91</status>
+            <midino>0x4D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <!-- ** HOTCUES/SAMPLES : DECK C ** -->
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.hotcueOrSamplePressed</key>
+            <description>HotCue 1</description>
+            <status>0x92</status>
+            <midino>0x0B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.hotcueOrSamplePressedShift</key>
+            <description>HotCue 1 Delete</description>
+            <status>0x92</status>
+            <midino>0x4A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.hotcueOrSamplePressed</key>
+            <description>HotCue 2</description>
+            <status>0x92</status>
+            <midino>0x0C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.hotcueOrSamplePressedShift</key>
+            <description>HotCue 2 Delete</description>
+            <status>0x92</status>
+            <midino>0x4B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.hotcueOrSamplePressed</key>
+            <description>HotCue 3</description>
+            <status>0x92</status>
+            <midino>0x0D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.hotcueOrSamplePressedShift</key>
+            <description>HotCue 3 Delete</description>
+            <status>0x92</status>
+            <midino>0x4C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.hotcueOrSamplePressed</key>
+            <description>HotCue 4</description>
+            <status>0x92</status>
+            <midino>0x0E</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.hotcueOrSamplePressedShift</key>
+            <description>HotCue 4 Delete</description>
+            <status>0x92</status>
+            <midino>0x4D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <!-- ** HOTCUES/SAMPLES : DECK D ** -->
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.hotcueOrSamplePressed</key>
+            <description>HotCue 1</description>
+            <status>0x93</status>
+            <midino>0x0B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.hotcueOrSamplePressedShift</key>
+            <description>HotCue 1 Delete</description>
+            <status>0x93</status>
+            <midino>0x4A</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.hotcueOrSamplePressed</key>
+            <description>HotCue 2</description>
+            <status>0x93</status>
+            <midino>0x0C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.hotcueOrSamplePressedShift</key>
+            <description>HotCue 2 Delete</description>
+            <status>0x93</status>
+            <midino>0x4B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.hotcueOrSamplePressed</key>
+            <description>HotCue 3</description>
+            <status>0x93</status>
+            <midino>0x0D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.hotcueOrSamplePressedShift</key>
+            <description>HotCue 3 Delete</description>
+            <status>0x93</status>
+            <midino>0x4C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.hotcueOrSamplePressed</key>
+            <description>HotCue 4</description>
+            <status>0x93</status>
+            <midino>0x0E</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.hotcueOrSamplePressedShift</key>
+            <description>HotCue 4 Delete</description>
+            <status>0x93</status>
+            <midino>0x4D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          
+          <!-- BEATJUMP BUTTON GROUP -->
+
+          <!-- BEATJUMP BUTTON GROUP : DECK A -->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>beatjump_4_backward</key>
+            <status>0x90</status>
+            <midino>0x05</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[Channel1]</group>
+            <key>beatjump_1_backward</key>
+            <status>0x90</status>
+            <midino>0x06</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[Channel1]</group>
+            <key>beatjump_1_forward</key>
+            <status>0x90</status>
+            <midino>0x07</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>beatjump_4_forward</key>
+            <status>0x90</status>
+            <midino>0x08</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- BEATJUMP BUTTON GROUP : DECK A : SHIFT LAYER -->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>beatjump_16_backward</key>
+            <status>0x90</status>
+            <midino>0x44</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>loop_in</key>
+            <status>0x90</status>
+            <midino>0x45</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>loop_out</key>
+            <status>0x90</status>
+            <midino>0x46</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>beatjump_16_forward</key>
+            <status>0x90</status>
+            <midino>0x47</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- BEATJUMP BUTTON GROUP : DECK B -->
+
+          <control>
+            <group>[Channel2]</group>
+            <key>beatjump_4_backward</key>
+            <status>0x91</status>
+            <midino>0x05</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>beatjump_1_backward</key>
+            <status>0x91</status>
+            <midino>0x06</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>beatjump_1_forward</key>
+            <status>0x91</status>
+            <midino>0x07</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>beatjump_4_forward</key>
+            <status>0x91</status>
+            <midino>0x08</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- BEATJUMP BUTTON GROUP : DECK B : SHIFT LAYER -->
+
+          <control>
+            <group>[Channel2]</group>
+            <key>beatjump_16_backward</key>
+            <status>0x91</status>
+            <midino>0x44</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>loop_in</key>
+            <status>0x91</status>
+            <midino>0x45</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>loop_out</key>
+            <status>0x91</status>
+            <midino>0x46</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>beatjump_16_forward</key>
+            <status>0x91</status>
+            <midino>0x47</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- BEATJUMP BUTTON GROUP // SAMPLE CONTROL : DECK C -->
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoop(1, -4)</key>
+            <description>Sample start/stop // beat jump -4</description>
+            <status>0x92</status>
+            <midino>0x05</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoop(2, -1)</key>
+            <description>Sample start/stop // beat jump -1</description>
+            <status>0x92</status>
+            <midino>0x06</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoop(3, 1)</key>
+            <description>Sample start/stop // beat jump 1</description>
+            <status>0x92</status>
+            <midino>0x07</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoop(4, 4)</key>
+            <description>Sample start/stop // beat jump 4</description>
+            <status>0x92</status>
+            <midino>0x08</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <!-- BEATJUMP BUTTON GROUP // SAMPLE CONTROL : DECK C : SHIFT LAYER -->
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoopShifted(1, -16)</key>
+            <description>Sample stop // beat jump -16</description>
+            <status>0x92</status>
+            <midino>0x44</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoopShifted(2, "in")</key>
+            <description>Sample stop // loop in</description>
+            <status>0x92</status>
+            <midino>0x45</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoopShifted(3, "out")</key>
+            <description>Sample stop // loop out</description>
+            <status>0x92</status>
+            <midino>0x46</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoopShifted(4, 16)</key>
+            <description>Sample stop // beat jump 16</description>
+            <status>0x92</status>
+            <midino>0x47</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- BEATJUMP BUTTON GROUP // SAMPLE CONTROL : DECK D -->
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoop(5, -4)</key>
+            <description>Sample start/stop // beat jump -4</description>
+            <status>0x93</status>
+            <midino>0x05</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoop(6, -1)</key>
+            <description>Sample start/stop // beat jump -1</description>
+            <status>0x93</status>
+            <midino>0x06</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoop(7, 1)</key>
+            <description>Sample start/stop // beat jump 1</description>
+            <status>0x93</status>
+            <midino>0x07</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoop(8, 4)</key>
+            <description>Sample start/stop // beat jump 4</description>
+            <status>0x93</status>
+            <midino>0x08</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <!-- BEATJUMP BUTTON GROUP // SAMPLE CONTROL : DECK D : SHIFT LAYER -->
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoopShifted(5, -16)</key>
+            <description>Sample stop // beat jump -16</description>
+            <status>0x93</status>
+            <midino>0x44</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoopShifted(6, "in")</key>
+            <description>Sample stop // loop in</description>
+            <status>0x93</status>
+            <midino>0x45</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoopShifted(7, "out")</key>
+            <description>Sample stop // loop out</description>
+            <status>0x93</status>
+            <midino>0x46</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleCtrlOrJumpLoopShifted(8, 16)</key>
+            <description>Sample stop // beat jump 16</description>
+            <status>0x93</status>
+            <midino>0x47</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <!-- LOOP ENCODERS : DECK A -->
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.setLoopSize</key>
+            <status>0xB0</status>
+            <midino>0x2B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>beatloop_activate</key>
+            <description>Start/ stop quantized loop</description>
+            <status>0x90</status>
+            <midino>0x2B</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.moveLoop</key>
+            <status>0xB0</status>
+            <midino>0x2C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.moveLoop_depressed</key>
+            <description>Activate/ deactive existing loop, or set move size</description>
+            <status>0x90</status>
+            <midino>0x2C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- LOOP ENCODERS : DECK B -->
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.setLoopSize</key>
+            <status>0xB1</status>
+            <midino>0x2B</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>beatloop_activate</key>
+            <description>Start/ stop quantized loop</description>
+            <status>0x91</status>
+            <midino>0x2B</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.moveLoop</key>
+            <status>0xB1</status>
+            <midino>0x2C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.moveLoop_depressed</key>
+            <description>Activate/ deactive existing loop, or set move size</description>
+            <status>0x91</status>
+            <midino>0x2C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- TODO LOOP ENCODERS : DECK C / D -->
+
+          <!-- PITCH/ RATE CONTROL -->
+          
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.rateControl</key>
+            <status>0xE0</status>
+            <options>
+              <soft-takeover/>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.rateControl</key>
+            <status>0xE1</status>
+            <options>
+              <soft-takeover/>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.rateControl</key>
+            <status>0xE2</status>
+            <options>
+              <soft-takeover/>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.rateControl</key>
+            <status>0xE3</status>
+            <options>
+              <soft-takeover/>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <!-- PITCH/ RATE NUDGE -->
+
+
+          <control>
+            <group>[Channel1]</group>
+            <key>rate_temp_up</key>
+            <status>0x90</status>
+            <midino>0x2A</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+
+          <control>
+            <group>[Channel1]</group>
+            <key>rate_temp_down</key>
+            <status>0x90</status>
+            <midino>0x29</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>rate_temp_up</key>
+            <status>0x91</status>
+            <midino>0x2A</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+
+          <control>
+            <group>[Channel2]</group>
+            <key>rate_temp_down</key>
+            <status>0x91</status>
+            <midino>0x29</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+          
+          <!-- TODO : RATE NUDGE ON C/D/SAMPLES -->
+          
+          <!-- EFFECTS -->
+          
+          <!-- EFFECTS : DECK ASSIGN : DECK A-->
+
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>group_[Channel1]_enable</key>
+            <description>Enable FX1 to Deck A</description>
+            <status>0x90</status>
+            <midino>0x54</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>group_[Channel1]_enable</key>
+            <description>Enable FX2 to Deck A</description>
+            <status>0x90</status>
+            <midino>0x55</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- EFFECTS : DECK ASSIGN : DECK B-->
+
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>group_[Channel2]_enable</key>
+            <description>Enable FX1 to Deck B</description>
+            <status>0x91</status>
+            <midino>0x54</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>group_[Channel2]_enable</key>
+            <description>Enable FX2 to Deck B</description>
+            <status>0x91</status>
+            <midino>0x55</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- EFFECTS : DECK ASSIGN : DECK C-->
+
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>group_[Channel3]_enable</key>
+            <description>Enable FX1 to Deck C</description>
+            <status>0x92</status>
+            <midino>0x54</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>group_[Channel2]_enable</key>
+            <description>Enable FX2 to Deck C</description>
+            <status>0x92</status>
+            <midino>0x55</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <!-- EFFECTS : DECK ASSIGN : DECK D -->
+
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>group_[Channel4]_enable</key>
+            <description>Enable FX1 to Deck D</description>
+            <status>0x93</status>
+            <midino>0x54</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>group_[Channel4]_enable</key>
+            <description>Enable FX2 to Deck D</description>
+            <status>0x93</status>
+            <midino>0x55</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+
+          <!-- EFFECTS : EFFECTS KNOBS : EFFECTS UNIT L-->
+          <!-- These codes are also sent by Deck C in NORMAL mode! -->
+
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>Jockey3RM.effectDryWet</key>
+            <description>FX1 Dry/ Wet</description>
+            <status>0xB0</status>
+            <midino>0x1D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>Jockey3RM.effectMixMode</key>
+            <description>Toggle effect mix mode</description>
+            <status>0x90</status>
+            <midino>0x1D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect1]</group>
+            <key>Jockey3RM.effectParameter</key>
+            <description>FX1 Effect1 metaknob</description>
+            <status>0xB0</status>
+            <midino>0x1E</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect2]</group>
+            <key>Jockey3RM.effectParameter</key>
+            <description>FX1 Effect2 metaknob</description>
+            <status>0xB0</status>
+            <midino>0x1F</midino>
+            <options>
+              <script-binding/>
+            </options> 
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect3]</group>
+            <key>Jockey3RM.effectParameter</key>
+            <description>FX1 Effect3 metaknob</description>
+            <status>0xB0</status>
+            <midino>0x20</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect1]</group>
+            <key>Jockey3RM.effectSelect</key>
+            <description>FX1 Effect1 selector</description>
+            <status>0xB0</status>
+            <midino>0x5D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect2]</group>
+            <key>Jockey3RM.effectSelect</key>
+            <description>FX1 Effect1 selector</description>
+            <status>0xB0</status>
+            <midino>0x5E</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect3]</group>
+            <key>Jockey3RM.effectSelect</key>
+            <description>FX1 Effect1 selector</description>
+            <status>0xB0</status>
+            <midino>0x5F</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- EFFECTS : EFFECTS SWITCHES : EFFECTS UNIT L-->
+          <!-- These codes are also sent by Deck C in NORMAL mode! -->
+
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>Jockey3RM.effectChainEnable</key>
+            <description>FX ON for FX1</description>
+            <status>0x90</status>
+            <midino>0x01</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect1]</group>
+            <key>Jockey3RM.effectEnable</key>
+            <description>FX1 Effect1 on/off</description>
+            <status>0x90</status>
+            <midino>0x02</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect2]</group>
+            <key>Jockey3RM.effectEnable</key>
+            <description>FX1 Effect2 on/off</description>
+            <status>0x90</status>
+            <midino>0x03</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit1_Effect3]</group>
+            <key>Jockey3RM.effectEnable</key>
+            <description>FX1 Effect3 on/off</description>
+            <status>0x90</status>
+            <midino>0x04</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- EFFECTS : EFFECTS KNOBS : EFFECTS UNIT R -->
+          <!-- These codes are also sent by Deck D in NORMAL mode! -->
+
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>Jockey3RM.effectDryWet</key>
+            <description>FX2 Dry/ Wet</description>
+            <status>0xB1</status>
+            <midino>0x1D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>Jockey3RM.effectMixMode</key>
+            <description>Toggle effect mix mode</description>
+            <status>0x91</status>
+            <midino>0x1D</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2_Effect1]</group>
+            <key>Jockey3RM.effectParameter</key>
+            <description>FX2 Effect1 metaknob</description>
+            <status>0xB1</status>
+            <midino>0x1E</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2_Effect2]</group>
+            <key>Jockey3RM.effectParameter</key>
+            <description>FX2 Effect2 metaknob</description>
+            <status>0xB1</status>
+            <midino>0x1F</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2_Effect3]</group>
+            <key>Jockey3RM.effectParameter</key>
+            <description>FX2 Effect3 metaknob</description>
+            <status>0xB1</status>
+            <midino>0x20</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- EFFECTS : EFFECTS SWITCHES : EFFECTS UNIT R-->
+          <!-- These codes are also sent by Deck D in NORMAL mode! -->
+
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>Jockey3RM.effectChainEnable</key>
+            <description>FX ON for FX2</description>
+            <status>0x91</status>
+            <midino>0x01</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2_Effect1]</group>
+            <key>Jockey3RM.effectEnable</key>
+            <description>FX2 Effect1 on/off</description>
+            <status>0x91</status>
+            <midino>0x02</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2_Effect2]</group>
+            <key>Jockey3RM.effectEnable</key>
+            <description>FX2 Effect2 on/off</description>
+            <status>0x91</status>
+            <midino>0x03</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2_Effect3]</group>
+            <key>Jockey3RM.effectEnable</key>
+            <description>FX2 Effect3 on/off</description>
+            <status>0x91</status>
+            <midino>0x04</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+
+          <!-- TODO: EFFECTS : EFFECTS PRESETS -->
+          
+          
+          <!-- SAMPLE MODE -->
+          
+          <!-- SAMPLE MODE : SWITCH -->
+ 
+          <control>
+            <group>[Channel1]</group>
+            <key>Jockey3RM.sampleModeSwitch</key>
+            <description>Sample mode switch</description>
+            <status>0x90</status>
+            <midino>0x13</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel2]</group>
+            <key>Jockey3RM.sampleModeSwitch</key>
+            <description>Sample mode switch</description>
+            <status>0x91</status>
+            <midino>0x13</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel3]</group>
+            <key>Jockey3RM.sampleModeSwitch</key>
+            <description>Sample mode switch</description>
+            <status>0x92</status>
+            <midino>0x13</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Channel4]</group>
+            <key>Jockey3RM.sampleModeSwitch</key>
+            <description>Sample mode switch</description>
+            <status>0x93</status>
+            <midino>0x13</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <!-- SAMPLE SELECT BUTTONS : DECK C -->
+
+          <control>
+            <group>[Sampler1]</group>
+            <key>Jockey3RM.sampleSelect</key>
+            <description>Deck C Sample select</description>
+            <status>0x92</status>
+            <midino>0x01</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler2]</group>
+            <key>Jockey3RM.sampleSelect</key>
+            <description>Deck C Sample select</description>
+            <status>0x92</status>
+            <midino>0x02</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler3]</group>
+            <key>Jockey3RM.sampleSelect</key>
+            <description>Deck C Sample select</description>
+            <status>0x92</status>
+            <midino>0x03</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler4]</group>
+            <key>Jockey3RM.sampleSelect</key>
+            <description>Deck C Sample select</description>
+            <status>0x92</status>
+            <midino>0x04</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <!-- SAMPLE SELECT BUTTONS : DECK C -->
+
+          <control>
+            <group>[Sampler5]</group>
+            <key>Jockey3RM.sampleSelect</key>
+            <description>Deck D Sample select</description>
+            <status>0x93</status>
+            <midino>0x01</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler6]</group>
+            <key>Jockey3RM.sampleSelect</key>
+            <description>Deck D Sample select</description>
+            <status>0x93</status>
+            <midino>0x02</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler7]</group>
+            <key>Jockey3RM.sampleSelect</key>
+            <description>Deck D Sample select</description>
+            <status>0x93</status>
+            <midino>0x03</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler8]</group>
+            <key>Jockey3RM.sampleSelect</key>
+            <description>Deck D Sample select</description>
+            <status>0x93</status>
+            <midino>0x04</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <!-- SAMPLE MODE : OVERALL VOL : DECK C -->
+
+          <control>
+            <group>[Sampler1]</group>
+            <key>volume</key>
+            <description>Deck C Sample vol</description>
+            <status>0xB2</status>
+            <midino>0x33</midino>
+            <options>
+            </options>
+          </control>
+          <control>
+            <group>[Sampler2]</group>
+            <key>volume</key>
+            <description>Deck C Sample vol</description>
+            <status>0xB2</status>
+            <midino>0x33</midino>
+            <options>
+            </options>
+          </control>
+          <control>
+            <group>[Sampler3]</group>
+            <key>volume</key>
+            <description>Deck C Sample vol</description>
+            <status>0xB2</status>
+            <midino>0x33</midino>
+            <options>
+            </options>
+          </control>
+          <control>
+            <group>[Sampler4]</group>
+            <key>volume</key>
+            <description>Deck C Sample vol</description>
+            <status>0xB2</status>
+            <midino>0x33</midino>
+            <options>
+            </options>
+          </control>
+
+          <!-- SAMPLE MODE : OVERALL VOL : DECK D -->
+
+          <control>
+            <group>[Sampler5]</group>
+            <key>volume</key>
+            <description>Deck D Sample vol</description>
+            <status>0xB3</status>
+            <midino>0x33</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler6]</group>
+            <key>volume</key>
+            <description>Deck D Sample vol</description>
+            <status>0xB3</status>
+            <midino>0x33</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler7]</group>
+            <key>volume</key>
+            <description>Deck D Sample vol</description>
+            <status>0xB3</status>
+            <midino>0x33</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler8]</group>
+            <key>volume</key>
+            <description>Deck D Sample vol</description>
+            <status>0xB3</status>
+            <midino>0x33</midino>
+            <options>
+            </options>
+          </control>
+
+
+          <!-- SAMPLE MODE : PREGAIN : DECK C -->
+
+          <control>
+            <group>[Sampler1]</group>
+            <key>pregain</key>
+            <description>Sample gain control</description>
+            <status>0xB2</status>
+            <midino>0x5C</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler2]</group>
+            <key>pregain</key>
+            <description>Sample gain control</description>
+            <status>0xB2</status>
+            <midino>0x5D</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler3]</group>
+            <key>pregain</key>
+            <description>Sample gain control</description>
+            <status>0xB2</status>
+            <midino>0x5E</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler4]</group>
+            <key>pregain</key>
+            <description>Sample gain control</description>
+            <status>0xB2</status>
+            <midino>0x5F</midino>
+            <options>
+            </options>
+          </control>
+
+          <!-- SAMPLE MODE : PREGAIN : DECK D -->
+
+          <control>
+            <group>[Sampler5]</group>
+            <key>pregain</key>
+            <description>Sample gain control</description>
+            <status>0xB3</status>
+            <midino>0x5C</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler6]</group>
+            <key>pregain</key>
+            <description>Sample gain control</description>
+            <status>0xB3</status>
+            <midino>0x5D</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler7]</group>
+            <key>pregain</key>
+            <description>Sample gain control</description>
+            <status>0xB3</status>
+            <midino>0x5E</midino>
+            <options>
+            </options>
+          </control>
+
+          <control>
+            <group>[Sampler8]</group>
+            <key>pregain</key>
+            <description>Sample gain control</description>
+            <status>0xB3</status>
+            <midino>0x5F</midino>
+            <options>
+            </options>
+          </control>
+
+          <!-- WIP -->
+
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>Jockey3RM.tryChain</key>
+            <description>shift dry wet</description>
+            <status>0xB0</status>
+            <midino>0x5C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+          
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>Jockey3RM.tryChain</key>
+            <description>shift dry wet</description>
+            <status>0xB1</status>
+            <midino>0x5C</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          
+          <control>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>Jockey3RM.remixEffectSuperKnob</key>
+            <description>FX SuperKnob on Remix mode Jogwheel</description>
+            <status>0xB0</status>
+            <midino>0x01</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+          <control>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>Jockey3RM.remixEffectSuperKnob</key>
+            <description>FX SuperKnob on Remix mode Jogwheel</description>
+            <status>0xB1</status>
+            <midino>0x01</midino>
+            <options>
+              <script-binding/>
+            </options>
+          </control>
+
+
+          <control>
+            <group>[Channel1]</group>
+            <key>quantize</key>
+            <description>Shift CUE Sets Quantize</description>
+            <status>0x90</status>
+            <midino>0x58</midino>
+            <options>
+              <normal/>
+            </options>
+          </control>
+
+
+          <!-- AND THE REST.... -->
+
+          
+  <!--
+         
+           
+      
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>Jockey3RM.effectDryWet</key>
+                <description>FX Param Mix</description>
+                <status>0xB0</status>
+                <midino>0x1D</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>Jockey3RM.effectSelectPush</key>
+                <description>FX Sel.X Push Linking to SuperKnob on Jogmode Pitchbend</description>
+                <status>0x90</status>
+                <midino>0x5E</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+          
+          <!- disable jogwheel when mode not selected
+          
+            
+            <control>
+                <group>[Channel1]</group>
+                <key>Jockey3RM.wheelTurn</key>
+                <description>Default Jog is Pitchbend</description>
+                <status>0xB0</status>
+                <midino>0x28</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            
+             ->
+            
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>Jockey3RM.effectSelect</key>
+                <description>FX Selection</description>
+                <status>0xB0</status>
+                <midino>0x5C</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+           
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>Jockey3RM.effectSelect</key>
+                <description>FX Selection in Chain and Linking</description>
+                <status>0xB0</status>
+                <midino>0x5E</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            
+ <!-           <control>
+                <group>[Microphone]</group>
+                <key>talkover</key>
+                <description>Shift Sync</description>
+                <status>0x92</status>
+                <midino>0x56</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            ->
+            
+            <control>
+                <group>[Microphone]</group>
+                <key>pregain</key>
+                <description>Shift Filter Controls Microphone Gain</description>
+                <status>0xB0</status>
+                <midino>0x71</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+           
+           
+           
+            <control>
+                <group>[Channel1]</group>
+                <key>beats_translate_curpos</key>
+                <description>Shift Minus Moves Beatgrid line to PlayPos</description>
+                <status>0x90</status>
+                <midino>0x68</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+         
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>Jockey3RM.effectSelect</key>
+                <description>FX Selection in Chain and Linking</description>
+                <status>0xB0</status>
+                <midino>0x5F</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            
+            <control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>Jockey3RM.effectSelect</key>
+                <description>FX Selection in Chain and Linking</description>
+                <status>0xB1</status>
+                <midino>0x5F</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+
+       
+           
+   -->
+          
+        </controls>
+        <outputs>
+          <!-- OUTPUT MIXER : TRAX (Load buttons) -->
+
+          <output>
+            <group>[Channel1]</group>
+            <key>beat_active</key>
+            <status>0x90</status>
+            <midino>0x1B</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel2]</group>
+            <key>beat_active</key>
+            <status>0x91</status>
+            <midino>0x1B</midino>
+            <minimum>0.1</minimum>
+          </output>
+          
+          <output>
+            <group>[Channel3]</group>
+            <key>beat_active</key>
+            <status>0x92</status>
+            <midino>0x1B</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel4]</group>
+            <key>beat_active</key>
+            <status>0x93</status>
+            <midino>0x1B</midino>
+            <minimum>0.1</minimum>
+          </output>
+          
+          <!-- OUTPUT MIXER : PFL -->
+
+          <output>
+            <group>[Channel1]</group>
+            <key>pfl</key>
+            <status>0x90</status>
+            <midino>0x1C</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel2]</group>
+            <key>pfl</key>
+            <status>0x91</status>
+            <midino>0x1C</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel3]</group>
+            <key>pfl</key>
+            <status>0x92</status>
+            <midino>0x1C</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel4]</group>
+            <key>pfl</key>
+            <status>0x93</status>
+            <midino>0x1C</midino>
+            <minimum>0.1</minimum>
+          </output>
+          
+          <!-- OUTPUT VUMETER : R -->
+          
+          <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x00</on>
+                <maximum>0.09</maximum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x01</on>
+                <maximum>0.19</maximum>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x02</on>
+                <off>0x01</off>
+                <maximum>0.29</maximum>
+                <minimum>0.2</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x03</on>
+                <off>0x02</off>
+                <maximum>0.39</maximum>
+                <minimum>0.3</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x04</on>
+                <off>0x03</off>
+                <maximum>0.49</maximum>
+                <minimum>0.4</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x05</on>
+                <off>0x04</off>
+                <maximum>0.59</maximum>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x06</on>
+                <off>0x05</off>
+                <maximum>0.69</maximum>
+                <minimum>0.6</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x07</on>
+                <off>0x06</off>
+                <maximum>0.79</maximum>
+                <minimum>0.7</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x08</on>
+                <off>0x07</off>
+                <maximum>0.89</maximum>
+                <minimum>0.8</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterR</key>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <on>0x09</on>
+                <off>0x08</off>
+                <maximum>0.99</maximum>
+                <minimum>0.9</minimum>
+            </output>
+          <output>
+            <group>[Master]</group>
+            <key>PeakIndicatorR</key>
+            <status>0x90</status>
+            <midino>0x09</midino>
+            <on>0x0A</on>
+            <off>0x09</off>
+            <minimum>0.1</minimum>
+          </output>
+
+
+          <!-- OUTPUT VUMETER : L -->
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x00</on>
+                <maximum>0.09</maximum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x01</on>
+                <maximum>0.19</maximum>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x02</on>
+                <off>0x01</off>
+                <maximum>0.29</maximum>
+                <minimum>0.2</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x03</on>
+                <off>0x02</off>
+                <maximum>0.39</maximum>
+                <minimum>0.3</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x04</on>
+                <off>0x03</off>
+                <maximum>0.49</maximum>
+                <minimum>0.4</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x05</on>
+                <off>0x04</off>
+                <maximum>0.59</maximum>
+                <minimum>0.5</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x06</on>
+                <off>0x05</off>
+                <maximum>0.69</maximum>
+                <minimum>0.6</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x07</on>
+                <off>0x06</off>
+                <maximum>0.79</maximum>
+                <minimum>0.7</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x08</on>
+                <off>0x07</off>
+                <maximum>0.89</maximum>
+                <minimum>0.8</minimum>
+            </output>
+            <output>
+                <group>[Master]</group>
+                <key>VuMeterL</key>
+                <status>0x90</status>
+                <midino>0x21</midino>
+                <on>0x09</on>
+                <off>0x08</off>
+                <maximum>0.99</maximum>
+                <minimum>0.9</minimum>
+            </output>
+
+          <output>
+            <group>[Master]</group>
+            <key>PeakIndicatorL</key>
+            <status>0x90</status>
+            <midino>0x21</midino>
+            <on>0x0A</on>
+            <off>0x09</off>
+            <minimum>0.1</minimum>
+          </output>
+          
+          <!-- OUTPUT TRANSPORT CONTROLS : DECK A -->
+
+          <output>
+            <group>[Channel1]</group>
+            <key>play_indicator</key>
+            <status>0x90</status>
+            <midino>0x1A</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel1]</group>
+            <key>cue_indicator</key>
+            <status>0x90</status>
+            <midino>0x19</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <!-- OUTPUT TRANSPORT CONTROLS : DECK A : SHIFT -->
+
+          <output>
+            <group>[Channel1]</group>
+            <key>keylock</key>
+            <status>0x90</status>
+            <midino>0x57</midino>
+            <minimum>0.1</minimum>
+          </output>
+          
+          <!-- OUTPUT TRANSPORT CONTROLS : DECK B -->
+
+          <output>
+            <group>[Channel2]</group>
+            <key>play_indicator</key>
+            <status>0x91</status>
+            <midino>0x1A</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel2]</group>
+            <key>cue_indicator</key>
+            <status>0x91</status>
+            <midino>0x19</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <!-- OUTPUT TRANSPORT CONTROLS : DECK B : SHIFT -->
+
+          <output>
+            <group>[Channel2]</group>
+            <key>keylock</key>
+            <status>0x91</status>
+            <midino>0x57</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+
+          <!-- TODO : THE FOLLOWING ARE INCORRECT IN SAMPLE DECK MODE -->
+          <!-- OUTPUT TRANSPORT CONTROLS : DECK C -->
+
+          <output>
+            <group>[Channel3]</group>
+            <key>play_indicator</key>
+            <status>0x92</status>
+            <midino>0x1A</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel3]</group>
+            <key>cue_indicator</key>
+            <status>0x92</status>
+            <midino>0x19</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <!-- OUTPUT TRANSPORT CONTROLS : DECK D -->
+          
+          <output>
+            <group>[Channel4]</group>
+            <key>play_indicator</key>
+            <status>0x93</status>
+            <midino>0x1A</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+
+          <output>
+            <group>[Channel4]</group>
+            <key>cue_indicator</key>
+            <status>0x93</status>
+            <midino>0x19</midino>
+            <minimum>0.1</minimum>
+          </output>
+          
+
+          <!-- HOTCUE LIGHTS ARE MANAGED IN CODE -->
+
+          <!-- SAMPLE LIGHTS ARE MANAGED IN CODE -->
+          
+          <!-- BEATJUMP LIGHTS ARE MANAGED In CODE -->
+          
+          <!-- OUTPUT: EFFECTS : EFFECT ENABLED :  DECK L -->
+
+          <output>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>enabled</key>
+            <status>0x90</status>
+            <midino>0x01</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit1_Effect1]</group>
+            <key>enabled</key>
+            <status>0x90</status>
+            <midino>0x02</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit1_Effect2]</group>
+            <key>enabled</key>
+            <status>0x90</status>
+            <midino>0x03</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit1_Effect3]</group>
+            <key>enabled</key>
+            <status>0x90</status>
+            <midino>0x04</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+
+          <!-- OUTPUT: EFFECTS : EFFECT ENABLED : DECK R -->
+
+          <output>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>enabled</key>
+            <status>0x91</status>
+            <midino>0x01</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit2_Effect1]</group>
+            <key>enabled</key>
+            <status>0x91</status>
+            <midino>0x02</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit2_Effect2]</group>
+            <key>enabled</key>
+            <status>0x91</status>
+            <midino>0x03</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit2_Effect3]</group>
+            <key>enabled</key>
+            <status>0x91</status>
+            <midino>0x04</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+
+
+          <!-- REMOVED OUTPUT HOTCUES - DECK C/A & D/B share same indicators! - ->
+          
+          <!- - ** OUTPUT HOTCUES : DECK A ** - ->
+          
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_1_enabled</key>
+                <status>0x90</status>
+                <midino>0x0B</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_1_enabled</key>
+                <description>shift layer</description>
+                <status>0x90</status>
+                <midino>0x4A</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_2_enabled</key>
+                <status>0x90</status>
+                <midino>0x0C</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_2_enabled</key>
+                <description>shift layer</description>
+                <status>0x90</status>
+                <midino>0x4B</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_3_enabled</key>
+                <status>0x90</status>
+                <midino>0x0D</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_3_enabled</key>
+                <description>shift layer</description>
+                <status>0x90</status>
+                <midino>0x4C</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_4_enabled</key>
+                <status>0x90</status>
+                <midino>0x0E</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_4_enabled</key>
+                <description>shift layer</description>
+                <status>0x90</status>
+                <midino>0x4D</midino>
+                <minimum>0.1</minimum>
+            </output>
+
+          <!- - ** OUTPUT HOTCUES : DECK B ** - ->
+
+          <output>
+                <group>[Channel2]</group>
+                <key>hotcue_1_enabled</key>
+                <status>0x91</status>
+                <midino>0x0B</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_1_enabled</key>
+                <description>shift layer</description>
+                <status>0x91</status>
+                <midino>0x4A</midino>
+                <minimum>0.1</minimum>
+            </output>
+
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_2_enabled</key>
+                <status>0x91</status>
+                <midino>0x0C</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_2_enabled</key>
+                <description>shift layer</description>
+                <status>0x91</status>
+                <midino>0x4B</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_3_enabled</key>
+                <status>0x91</status>
+                <midino>0x0D</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_3_enabled</key>
+                <description>shift layer</description>
+                <status>0x91</status>
+                <midino>0x4C</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_4_enabled</key>
+                <status>0x91</status>
+                <midino>0x0E</midino>
+                <minimum>0.1</minimum>
+            </output>
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_4_enabled</key>
+                <description>shift layer</description>
+                <status>0x91</status>
+                <midino>0x4D</midino>
+                <minimum>0.1</minimum>
+            </output>
+
+          <!- - OUTPUT SAMPLES : DECK C - ->
+          
+          <output>
+            <group>[Sampler1]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample</description>
+            <status>0x92</status>
+            <midino>0x0B</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler1]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample (Shift layer)</description>
+            <status>0x92</status>
+            <midino>0x4A</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler2]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample</description>
+            <status>0x92</status>
+            <midino>0x0C</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler2]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample (Shift layer)</description>
+            <status>0x92</status>
+            <midino>0x4B</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler3]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample</description>
+            <status>0x92</status>
+            <midino>0x0D</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler3]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample (Shift layer)</description>
+            <status>0x92</status>
+            <midino>0x4C</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler4]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample</description>
+            <status>0x92</status>
+            <midino>0x0E</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler4]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample (Shift layer)</description>
+            <status>0x92</status>
+            <midino>0x4D</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <!- - OUTPUT SAMPLES : DECK D - ->
+
+          <output>
+            <group>[Sampler5]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample</description>
+            <status>0x93</status>
+            <midino>0x0B</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler5]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample (Shift layer)</description>
+            <status>0x93</status>
+            <midino>0x4A</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler6]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample</description>
+            <status>0x93</status>
+            <midino>0x0C</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler6]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample (Shift layer)</description>
+            <status>0x93</status>
+            <midino>0x4B</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler7]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample</description>
+            <status>0x93</status>
+            <midino>0x0D</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler7]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample (Shift layer)</description>
+            <status>0x93</status>
+            <midino>0x4C</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler8]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample</description>
+            <status>0x93</status>
+            <midino>0x0E</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <output>
+            <group>[Sampler8]</group>
+            <key>track_loaded</key>
+            <description>blue hotcue for sample (Shift layer)</description>
+            <status>0x93</status>
+            <midino>0x4D</midino>
+            <minimum>0.1</minimum>
+            <on>50</on>
+          </output>
+
+          <!- - eND Of REMOVED HOTCUES OUTPUT -->
+          
+          <!-- OUTPUT BEATJUMP/ LOOP-->
+          <!-- PROBABLY WRONG! - NOW In CODE! 
+          <output>
+            <group>[Channel1]</group>
+            <key>loop_in</key>
+            <status>0x90</status>
+            <midino>0x45</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[Channel1]</group>
+            <key>loop_out</key>
+            <status>0x90</status>
+            <midino>0x46</midino>
+            <minimum>0.1</minimum>
+          </output> -->
+
+          <!-- EFFECTS : DECK ASSIGNMENT -->
+
+          <output>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>group_[Channel1]_enable</key>
+            <status>0x90</status>
+            <midino>0x54</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>group_[Channel1]_enable</key>
+            <status>0x90</status>
+            <midino>0x55</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>group_[Channel2]_enable</key>
+            <status>0x91</status>
+            <midino>0x54</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>group_[Channel2]_enable</key>
+            <status>0x91</status>
+            <midino>0x55</midino>
+            <minimum>0.1</minimum>
+          </output>
+          
+          <output>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>group_[Channel3]_enable</key>
+            <status>0x92</status>
+            <midino>0x54</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>group_[Channel3]_enable</key>
+            <status>0x92</status>
+            <midino>0x55</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit1]</group>
+            <key>group_[Channel4]_enable</key>
+            <status>0x93</status>
+            <midino>0x54</midino>
+            <minimum>0.1</minimum>
+          </output>
+
+          <output>
+            <group>[EffectRack1_EffectUnit2]</group>
+            <key>group_[Channel4]_enable</key>
+            <status>0x93</status>
+            <midino>0x55</midino>
+            <minimum>0.1</minimum>
+          </output>
+          <!-- OUTPUT AND THE REST ... -->
+
+          
+          <!--
+ 
+           
+            <output>
+                <group>[Channel2]</group>
+                <key>sync_enabled</key>
+                <status>0x91</status>
+                <midino>0x17</midino>
+                <minimum>0.1</minimum>
+            </output>
+ 
+            <output>
+                <group>[Channel1]</group>
+                <key>quantize</key>
+                <status>0x90</status>
+                <midino>0x58</midino>
+                <minimum>0.1</minimum>
+            </output>
+    
+           
+            
+            
+  
+            <output>
+                <group>[Microphone]</group>
+                <key>talkover</key>
+                <status>0x90</status>
+                <midino>0x56</midino>
+                <minimum>0.1</minimum>
+            </output>
+        
+
+            <output>
+                <group>[Channel2]</group>
+                <key>PeakIndicator</key>
+                <status>0x91</status>
+                <midino>0x21</midino>
+                <on>0x0A</on>
+                <off>0x09</off>
+                <minimum>0.1</minimum>
+            </output>
+         
+           
+            <output>
+                <group>[Channel1]</group>
+                <key>reloop_exit</key>
+                <status>0x90</status>
+                <midino>0x05</midino>
+                <minimum>0.1</minimum>
+            </output>
+      
+          -->
+          
+        </outputs>
+    </controller>
+</MixxxControllerPreset>
